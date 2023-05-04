@@ -1,275 +1,225 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Montserrat:wght@300&family=Raleway:wght@300&display=swap');
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-header {
-    position: relative;
-    z-index: 10;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .logo-Container {
-  width: 38%;
-  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
 }
 
 .logo {
-  width: 15%;
-  position: fixed;
-  left: 0;
-  top: 0;
+  height: 3rem;
 }
 
 .menu-Container {
-  margin-right: 5%;
-  width: 50%;
-  text-align: center;
-  float: right;
+  display: flex;
+  flex-direction: row;
+  text-align: right;
 }
 
 .menu-Container ul {
-  display: inline-block;
+  display: flex;
   list-style: none;
-  white-space: nowrap;
+  margin: 0;
+  padding: 0;
 }
 
 .menu {
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    list-style: none;
-    display: inline-block;
-    padding: 1%;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  margin-left: 1rem;
 }
 
 .pages {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: snow;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #212529;
 }
+
 /*edicion del main*/
 main {
-    width: 200vh;
-    background-color: #173066;
-    padding-top: 48%;
-    background-image: url(../img/fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: 95rem;
-    background-position: right;
-    position: relative;
+  width: 200vh;
+  background-color: #173066;
+  padding-top: 48%;
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: 95rem;
+  background-position: right;
+  position: relative;
 }
 
 .box-Container {
-    border-radius: 50%;
-    background-color: #B9C0D1;
-    display: inline-block;
-    width: 40%;
-    height: 40%;
-    border: solid 1px black;
-    position: absolute;
-    top: 20%;
-    z-index: 20;
-    padding: 2%;
+  border-radius: 50%;
+  background-color: #B9C0D1;
+  display: inline-block;
+  width: 40%;
+  height: 40%;
+  border: solid 1px black;
+  position: absolute;
+  top: 20%;
+  z-index: 20;
+  padding: 2%;
 }
 
 .titulo {
-    width: 100%;
-    text-align: center;
-    display: inline-block;
-    font-family: 'Alkatra', cursive;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Alkatra', cursive;
 }
-.tituloo{
+
+.tituloo {
   font-size: 3.5vh;
 }
 
 .parrafo {
-    width: 100%;
-    text-align: center;
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .boton1 {
-    margin-left: 30%;
-    cursor: pointer;
+  margin-left: 30%;
+  cursor: pointer;
 }
 
 .turnos {
-    background-color: #091328;
-    font-size: 1.5rem;
-    font-family: 'Raleway', sans-serif;
-    color: ivory;
-    padding: 5px;
+  background-color: #091328;
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  color: ivory;
+  padding: 5px;
 }
 
 .tamañoImagen {
-    width: 60%;
+  width: 60%;
 }
+
 /*edicion del footer*/
-footer{
+footer {
   width: 200vh;
   height: 15vh;
   background-image: linear-gradient(to right top, #c1c1c1, #a4a3af, #87869e, #696a8d, #4a507c, #445682, #3e5d88, #37638d, #5e8aa7, #8db1c0, #c2d8dd, #fbffff);
 }
 
-.instagram{
+.instagram {
   display: inline-block;
   width: 20%;
   height: auto;
-  float:initial;
+  float: initial;
   margin-left: 10%;
 }
-.whatsapp{
+
+.whatsapp {
   display: inline-block;
   width: 20%;
   height: auto;
   float: inherit;
   margin-left: 10%;
 }
-.envelope{
+
+.envelope {
   display: inline-block;
   width: 20%;
   height: auto;
   float: inline-end;
   margin-left: 10%;
 }
-/* Estilos para pantallas de 480px a 500px inicio*/
-@media screen and (max-width: 500px) {
-  .logo {
-    background-color: #091328;
-    width: 30%;
-    left: 5%;
-  }
-  .menu-Container {
-    margin-right: 0;
-    width: 100%;
-    text-align: center;
-    float: none;
-  }
-  .pages {
-    font-size: 1rem;
-    margin-right: 5%;
-  }
-  main {
-    width: 100%;
-    background-size: cover;
-    padding-top: 80%;
-    background-position: center;
-  }
-  .box-Container {
-    width: 100%;
-    height: 45%;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .tituloo{
-    font-size: 1.1rem;
-  }
-  .parrafo {
-    font-size: 0.9rem;
-  }
-  .boton1 {
-    margin-left: 35%;
-    font-size: 5rem;
-  }
-  .turnos {
-    font-size: 1rem;
-  }
-  footer {
-    width: 100%;
-  }
-  .instagram,
-  .whatsapp,
-  .envelope {
-    width: 20%;
-    margin-left: 10%;
-  }
-}
+
 /*smile gallery html*/
-.smileGalleryContainer{
+.smileGalleryContainer {
   font-size: 1.5rem;
   color: snow;
   height: 5vh;
-  width:fit-content;
+  width: fit-content;
   background-image: url(../img/pexels-daniel-maldonado-4119179.jpg);
   background-repeat: no-repeat;
-  background-size:200vh;
+  background-size: 200vh;
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr;
   grid-gap: 10px;
   grid-template-areas:
-  "headerSmileGallery headerSmileGallery"
-  "tituloSmileGallery tituloSmileGallery"
-  "carouselOrtodoncia descripcionOrtodoncia"
-  "descripcionEstetica carouselEstetica"
-  "carouselRestauraciones descripcionRestauraciones"
-  "footerSmileGallery footerSmileGallery";
-  }
-  .carousel {
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    "headerSmileGallery headerSmileGallery"
+    "tituloSmileGallery tituloSmileGallery"
+    "carouselOrtodoncia descripcionOrtodoncia"
+    "descripcionEstetica carouselEstetica"
+    "carouselRestauraciones descripcionRestauraciones"
+    "footerSmileGallery footerSmileGallery";
 }
-  .carousel-item img {
-    width: 70%;
-    height: 250px;
-    object-fit: cover;
-    margin: 20px;
-    }
-    
-  .headerSmileGallery{
-    grid-area: headerSmileGallery;
-    background-color:#062261;
-  }
-  .tituloSmileGallery{
-    grid-area:tituloSmileGallery;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: #062261;
-    color: snow;
-  }
-  .carouselOrtodoncia{
-    grid-area: carouselOrtodoncia;
-  }
-  .descripcionOrtodoncia{
-    grid-area: descripcionOrtodoncia;
-  }
-  .carouselEstetica{
-    grid-area: carouselEstetica;
-  }
-  .descripcionEstetica{
-    grid-area: descripcionEstetica;
-  }
-  .carouselRestauraciones{
-    grid-area: carouselRestauraciones;
-  }
-  .descripcionRestauraciones{
-    grid-area: descripcionRestauraciones;
-  }
-  
-  .footerSmileGallery{
-    grid-area: footerSmileGallery;
-  }
-  .carousel-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/fondo.jpg);
-    background-size: 150vh;
-    background-repeat: no-repeat;
-    color: snow;
-  }
+
+.carousel-item img {
+  width: 70%;
+  height: 250px;
+  object-fit: cover;
+  margin: 20px;
+}
+
+.headerSmileGallery {
+  grid-area: headerSmileGallery;
+  background-color: #062261;
+}
+
+.tituloSmileGallery {
+  grid-area: tituloSmileGallery;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #062261;
+  color: snow;
+}
+
+.carouselOrtodoncia {
+  grid-area: carouselOrtodoncia;
+}
+
+.descripcionOrtodoncia {
+  grid-area: descripcionOrtodoncia;
+}
+
+.carouselEstetica {
+  grid-area: carouselEstetica;
+}
+
+.descripcionEstetica {
+  grid-area: descripcionEstetica;
+}
+
+.carouselRestauraciones {
+  grid-area: carouselRestauraciones;
+}
+
+.descripcionRestauraciones {
+  grid-area: descripcionRestauraciones;
+}
+
+.footerSmileGallery {
+  grid-area: footerSmileGallery;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fondo.jpg);
+  background-size: 150vh;
+  background-repeat: no-repeat;
+  color: snow;
+}
+
 /*servicios html*/
 .serviciosContainer {
   display: flex;
@@ -277,14 +227,16 @@ footer{
   align-items: center;
   flex-direction: column;
 }
-.serviciosHeader{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 5%;
-    z-index: 9999;
+
+.serviciosHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 5%;
+  z-index: 9999;
 }
-.serviciosTitulo2{
+
+.serviciosTitulo2 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -302,7 +254,7 @@ footer{
   width: 100%;
 }
 
-.serviciosTitleContainer{
+.serviciosTitleContainer {
   margin-left: 10%;
   flex-basis: 60%;
 }
@@ -312,167 +264,178 @@ footer{
   margin-right: 10%;
 }
 
-.boxContainerServicios{
+.boxContainerServicios {
   display: flex;
   flex-direction: row;
-  align-items:flex-start;
-  margin:90px;
+  align-items: flex-start;
+  margin: 90px;
   margin-bottom: 160px;
   margin-left: 100px;
 }
-.parrafo{
+
+.parrafo {
   width: 100%;
-  text-align:center;
+  text-align: center;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
 }
-.serviciosParrafo{
-  width:100%;
+
+.serviciosParrafo {
+  width: 100%;
   background-image: url(../img/pexels-daniel-maldonado-4119179.jpg);
   color: snow;
   font-size: 2.5vh;
   text-align: justify;
 }
-.serviciosText{
+
+.serviciosText {
   color: snow;
   width: 80%;
   margin-left: 10%;
   border-radius: 20px;
   border: 2px solid #B9C0D1;
 }
+
 /*conocenos html*/
 .conocenosContainer {
-    background-image: url(../img/pexels-daniel-maldonado-4119179.jpg); 
-    background-repeat: no-repeat;
-    background-size: 300vh;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 1fr 3fr 3fr 1fr;
-    grid-gap: 10px;
-    height: 50vh;
-    grid-template-areas:
-      "conocenosHeader conocenosHeader conocenosHeader"
-      "conocenosTitulo conocenosTitulo conocenosTitulo"
-      "conocenos fernando botonConocenos"
-      "conocenos marigris botonConocenos"
-      "conocenosFooter conocenosFooter conocenosFooter";
-  }
-  
-  .conocenosHeader { 
-    grid-area: conocenosHeader;
-    background-color: #062261
-  }
-  .conocenos {
-    grid-area: conocenos;
-    background-image: url(../img/fondo.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 160vh;
-    width: 307px;
-  }
-  
-  .inf {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 240px;
-    border: 2px solid snow;
-    font-size: 1rem;
-    color: snow;
-    padding: 2em;
-    margin-top: 3.5em;
-  }
-  
-  .maps {
-    width: 310px;
-    height: 310px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .maps iframe {
-    width: 100%;
-    height: 80%;
-  }
-  
-  .conocenosTitulo {
-    grid-area: conocenosTitulo;
-    width: 100%;
-    color: snow;
-    font-family: 'Poppins', sans-serif;
-    background-image: url(../img/fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }  
-  
-  .conocenosTitulo2 {
-    max-width: 100%;
-    font-size: 60px;
-    margin-bottom: 0%;
-  }
-  
-  .conocenosParrafo {
-    max-width: 100%;
-    font-size: 18px;
-    color: snow;
-    text-align: center;
-  }  
-  .fernando {
-    grid-area: fernando;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+  background-image: url(../img/pexels-daniel-maldonado-4119179.jpg);
+  background-repeat: no-repeat;
+  background-size: 300vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 3fr 3fr 1fr;
+  grid-gap: 10px;
+  height: 50vh;
+  grid-template-areas:
+    "conocenosHeader conocenosHeader conocenosHeader"
+    "conocenosTitulo conocenosTitulo conocenosTitulo"
+    "conocenos fernando botonConocenos"
+    "conocenos marigris botonConocenos"
+    "conocenosFooter conocenosFooter conocenosFooter";
+}
 
-  .fernandoImg {
-    width: 50%;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  .descripcion-Fernando{
-    color:snow;
-    font-size: 30px;
-    font-family: 'Georgia', serif;
-    padding-left: 20px;
-  }
-  .marigris {
-    grid-area: marigris;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .marigrisImg {
-    width: 50%;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  .descripcion-Marigris{
-    color: snow;
-    font-size: 30px;
-    font-family: 'Georgia', serif;
-    padding-left: 20px;
-  }
-    .botonConocenos{
-    grid-area: botonConocenos;
-    background-image: url(../img/fondo.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  .conocenosFooter {
-    grid-area: conocenosFooter;
-  }
+.conocenosHeader {
+  grid-area: conocenosHeader;
+}
+
+.conocenos {
+  grid-area: conocenos;
+  background-image: url(../img/fondo.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160vh;
+  width: 307px;
+}
+
+.inf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  border: 2px solid snow;
+  font-size: 1rem;
+  color: snow;
+  padding: 2em;
+  margin-top: 3.5em;
+}
+
+.maps {
+  width: 310px;
+  height: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maps iframe {
+  width: 100%;
+  height: 80%;
+}
+
+.conocenosTitulo {
+  grid-area: conocenosTitulo;
+  width: 100%;
+  color: snow;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.conocenosTitulo2 {
+  max-width: 100%;
+  font-size: 60px;
+  margin-bottom: 0%;
+}
+
+.conocenosParrafo {
+  max-width: 100%;
+  font-size: 18px;
+  color: snow;
+  text-align: center;
+}
+
+.fernando {
+  grid-area: fernando;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fernandoImg {
+  width: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.descripcion-Fernando {
+  color: snow;
+  font-size: 30px;
+  font-family: 'Georgia', serif;
+  padding-left: 20px;
+}
+
+.marigris {
+  grid-area: marigris;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.marigrisImg {
+  width: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.descripcion-Marigris {
+  color: snow;
+  font-size: 30px;
+  font-family: 'Georgia', serif;
+  padding-left: 20px;
+}
+
+.botonConocenos {
+  grid-area: botonConocenos;
+  background-image: url(../img/fondo.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.conocenosFooter {
+  grid-area: conocenosFooter;
+}
+
 /*turnos html*/
 .titulo-Turnos {
   background-image: url(../img/pexels-daniel-maldonado-4119179.jpg);
@@ -485,12 +448,14 @@ footer{
 .titulo-Turnos h1 {
   font-size: 2.5rem;
 }
-.parrafoTurnosContainer{
+
+.parrafoTurnosContainer {
   width: 50%;
   margin-left: 25%;
   border-radius: 100%;
   background-color: #302f34;
 }
+
 .parrafo-Turnos {
   text-align: center;
   color: snow;
@@ -505,12 +470,14 @@ footer{
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .formulario-Turnos label {
   display: block;
   margin-bottom: 0.5rem;
   color: snow;
   font-size: 1.5rem;
 }
+
 .formulario-Turnos input[type="submit"] {
   background-image: url(../img/pexels-daniel-maldonado-4119179.jpg);
   color: #FFFFFF;
@@ -537,89 +504,69 @@ footer{
 .titulo2Turnos h2 {
   font-size: 2.5rem;
 }
-.parrafo2Turnos{
-color: snow;
-font-size: 1.5rem;
-margin-left: 15px;
-background-color: #302f34;
-border-radius: 20%;
-margin: 1.5rem;
+
+.parrafo2Turnos {
+  color: snow;
+  font-size: 1.5rem;
+  margin-left: 15px;
+  background-color: #302f34;
+  border-radius: 20%;
+  margin: 1.5rem;
 }
-.formulario-Consultas{
- margin-right: 15%;
- margin-bottom: 20px;
+
+.formulario-Consultas {
+  margin-right: 15%;
+  margin-bottom: 20px;
 }
-/* Estilos para pantallas con un ancho máximo de 500px */
+
+.container-content {
+  padding: 40px;
+}
+
 @media screen and (max-width: 500px) {
-  .logo {
-    background-color: #091328;
-    width: 30%;
-    left: 5%;
-  }
-  .menu-Container {
-    margin-right: 0;
+  main {
     width: 100%;
-    text-align: center;
-    float: none;
+    background-size: cover;
+    padding-top: 80%;
+    background-position: center;
   }
-  .pages {
+
+
+  .box-Container {
+    width: 100%;
+    height: 45%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .tituloo {
+    font-size: 1.1rem;
+  }
+
+
+  .parrafo {
+    font-size: 0.9rem;
+  }
+
+
+  .boton1 {
+    margin-left: 35%;
+    font-size: 5rem;
+  }
+
+
+  .turnos {
     font-size: 1rem;
-    margin-right: 5%;
-  }
-  .titulo-Turnos {
-    margin-top: -350px;
-    padding: 0.5rem;
   }
 
-  .titulo-Turnos h1 {
-    font-size: 2rem;
-  }
 
-  .parrafoTurnosContainer {
-    width: 80%;
-    margin-left: 10%;
-  }
-
-  .parrafo-Turnos {
-    font-size: 1.2rem;
-  }
-
-  .formulario-Turnos {
-    max-width: 100%;
-    margin: 0;
-    padding: 1rem;
-  }
-
-  .formulario-Turnos label {
-    font-size: 1.2rem;
-  }
-
-  .formulario-Turnos input[type="submit"] {
-    font-size: 1rem;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .titulo2Turnos {
-    padding: 0.5rem;
-  }
-
-  .titulo2Turnos h2 {
-    font-size: 2rem;
-  }
-
-  .parrafo2Turnos {
-    font-size: 1.2rem;
-    margin: 10px;
-  }
-
-  .formulario-Consultas {
-    margin-right: 0;
-  }
   footer {
     width: 100%;
-    height: 20%;
   }
+
+
   .instagram,
   .whatsapp,
   .envelope {
@@ -628,3 +575,80 @@ margin: 1.5rem;
   }
 }
 
+/* Estilos para pantallas con un ancho máximo de 500px turnos*/
+@media screen and (max-width: 500px) {
+  .titulo-Turnos {
+    margin-top: -350px;
+    padding: 0.5rem;
+  }
+
+
+  .titulo-Turnos h1 {
+    font-size: 2rem;
+  }
+
+
+  .parrafoTurnosContainer {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+
+  .parrafo-Turnos {
+    font-size: 1.2rem;
+  }
+
+
+  .formulario-Turnos {
+    max-width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+
+
+  .formulario-Turnos label {
+    font-size: 1.2rem;
+  }
+
+
+  .formulario-Turnos input[type="submit"] {
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+
+  .titulo2Turnos {
+    padding: 0.5rem;
+  }
+
+
+  .titulo2Turnos h2 {
+    font-size: 2rem;
+  }
+
+
+  .parrafo2Turnos {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+
+
+  .formulario-Consultas {
+    margin-right: 0;
+  }
+
+
+  footer {
+    width: 100%;
+    height: 20%;
+  }
+
+
+  .instagram,
+  .whatsapp,
+  .envelope {
+    width: 20%;
+    margin-left: 10%;
+  }
+}
